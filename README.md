@@ -3,6 +3,7 @@ The official implementation for paper "Evaluate Confidence Instead of Perplexity
 
 # Environment
 ```
-PyTorch==1.13.0
-Transformers==4.25.1
+NumPy == 1.23.5
+PyTorch == 1.13.0
+Transformers == 4.25.1
 ```
