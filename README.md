@@ -30,6 +30,18 @@ python nrc/unsupervised/inference.py
 ```
 to run reasoning on the CommonsenseQA dev dataset. You can edit ```./config/unsupervised.json``` to run experiments with different models on different datasets. Current, we support running pre-trained language models with objective: masked language modeling, casual language modeling, or replaced token detection. Notice that DeBERTaV3 is not available because we currently cannot load its AutoModelForPreTraining Version to calculate NRC.
 
+# Only need NRC?
+Use the following code to evaluate your texts!
+```
+from transformers import AutoTokenizer, AutoModelForPreTraining
+
+model_path = "google/electra-large-discriminator"
+tokenizer, model = AutoTokenizer.from_pretrained(model_path), AutoModelForPreTraining.from_pretrained(model_path)
+text = "Subterranean roses blossom in the sky." # サブタレイニアンローズは空に咲いている。
+nrc = -model(**tokenizer([text], return_tensors="pt")).logits.mean().item()
+```
+You are supposed to get nrc = 4.07.
+
 # Performance
 
 | Method                | Trg. | CSQA | ARC_E | ARC_C | COPA | Swag | SCT  | SQA  | CQA  | Avg. |
