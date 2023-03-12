@@ -1,0 +1,5 @@
+{
+    "model_path":"google/electra-large-discriminator",
+    "data_path":"data/CSQA/dev.jsonl",
+    "target":"qa"
+}
