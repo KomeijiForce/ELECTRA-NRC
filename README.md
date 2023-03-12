@@ -30,6 +30,8 @@ python nrc/unsupervised/inference.py
 ```
 to run reasoning on the CommonsenseQA dev dataset. You can edit ```./config/unsupervised.json``` to run experiments with different models on different datasets. Current, we support running pre-trained language models with objective: masked language modeling, casual language modeling, or replaced token detection. Notice that DeBERTaV3 is not available because we currently cannot load its AutoModelForPreTraining Version to calculate NRC.
 
+# Performance
+
 | Method                | Trg. | CSQA | ARC_E | ARC_C | COPA | Swag | SCT  | SQA  | CQA  | Avg. |
 |-----------------------|--------|-------|-------|--------|-------|--------|--------|-------|--------|--------|
 | PPL_GPT2-XL       | A       | 42.6  | 50.8  | 28.8   | 73.6  | 65.3   | 70.6   | 45.5  | 35.5   | 51.6   |
@@ -44,4 +46,4 @@ to run reasoning on the CommonsenseQA dev dataset. You can edit ```./config/unsu
 |                             | A       | 45.0  | 47.9  | 37.1   | 71.2  | 77.4   | 74.7   | 46.1  | 41.9   | 55.2   |
 |                             | QA    | 54.1  | 52.1  | 39.8   | 78.4  | 75.4   | 77.1   | 47.7  | 44.3   | 58.6   |
 
-
+*Results on Unsupervised Commonsense Reason
