@@ -1,7 +1,7 @@
 # Non-Replacement Confidence (NRC)
 The official implementation for paper "Evaluate Confidence Instead of Perplexity for Commonsense Reasoning"
 
-![image](https://github.com/KomeijiForce/ELECTRA-NRC/blob/main/instance.png =100x)
+![image](https://github.com/KomeijiForce/ELECTRA-NRC/blob/main/instance.png){:height="50%" width="50%"}
 
 # Environment
 Use
