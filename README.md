@@ -11,3 +11,13 @@ PyTorch: 1.13.0
 Transformers: 4.25.1
 jsonlines
 ```
+# How to run?
+First download the datasets with scripts in ./data, e.g.:
+```
+bash data/download.csqa.sh
+```
+This will download the CommonsenseQA dataset to ./data/CSQA. Then use
+```
+python nrc/unsupervised/inference.py
+```
+to run inference on the CommonsenseQA dev dataset.
