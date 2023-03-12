@@ -20,4 +20,4 @@ This will download the CommonsenseQA dataset to ./data/CSQA. Then use
 ```
 python nrc/unsupervised/inference.py
 ```
-to run inference on the CommonsenseQA dev dataset.
+to run reasoning on the CommonsenseQA dev dataset.
