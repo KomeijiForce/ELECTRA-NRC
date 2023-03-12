@@ -1,8 +1,8 @@
 # Non-Replacement Confidence (NRC)
 The official implementation for paper "Evaluate Confidence Instead of Perplexity for Commonsense Reasoning"
 
-NRC is a novel metric for both supervised and unsupervised commonsense reasoning. It is based on the ELECTRA architecture and has unique properties such as Equal Synonym Positiveness and Negative Sample Learning, which align it more closely with the nature of commonsense reasoning.
-
+NRC is a novel metric for both supervised and unsupervised commonsense reasoning. It is based on the ELECTRA architecture and has unique properties such as *Equal Synonym Positiveness* and *Negative Sample Learning*, which align it more closely with the nature of commonsense reasoning.
+****
 Thanks to these properties, NRC has shown impressive performance in evaluating unsupervised commonsense reasoning. Moreover, it can also serve as an objective for tuning models to achieve better results in supervised settings.
 
 Overall, NRC offers a promising new approach to measuring and improving commonsense reasoning in natural language processing. Its innovative design and strong performance make it a valuable tool for researchers and practitioners alike.
