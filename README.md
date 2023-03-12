@@ -20,4 +20,4 @@ This will download the CommonsenseQA dataset to ```./data/CSQA/```. Then use
 ```
 python nrc/unsupervised/inference.py
 ```
-to run reasoning on the CommonsenseQA dev dataset. You can edit ```./config/unsupervised.json``` to run experiments with different models on different datasets. Current, we support running pre-trained language models with objective: masked language modeling, casual language modeling, or replaced token detection. Notice, DeBERTaV3 is not available because we current cannot load it to calculate NRC.
+to run reasoning on the CommonsenseQA dev dataset. You can edit ```./config/unsupervised.json``` to run experiments with different models on different datasets. Current, we support running pre-trained language models with objective: masked language modeling, casual language modeling, or replaced token detection. Notice that DeBERTaV3 is not available because we current cannot load it to calculate NRC.
